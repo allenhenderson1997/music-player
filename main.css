@@ -1,0 +1,247 @@
+@font-face {
+
+    src: url(font/kg_happy/KGHAPPYShadows.ttf);
+    font-family: KG Happy;
+}
+
+@font-face {
+
+    src: url(font/kg_happy/KGHAPPYSolid.ttf);
+    font-family: KG Happy Solid;
+}
+
+@font-face {
+
+    src: url(font/rio_grande/RioGrande.ttf);
+    font-family: Rio Grande Regular;
+}
+
+body {
+
+    margin: 2px;
+}
+
+header img {
+
+    width: 100%;
+    height: 25vh;
+    border: 1px solid black;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#logo-and-text {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #D2D6D5;
+
+}
+
+#logo-and-text ul {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#logo-and-text ul li {
+
+    padding: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#logo-and-text span {
+
+    display: flex;
+    align-items: center;
+    font-family: KG Happy;
+    color: #252727;
+    font-weight: bold;
+    font-size: 50px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+    padding-left: 30px;
+    animation-name: TiltLeftAndRight;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+}
+
+@keyframes TiltLeftAndRight {
+
+    10% {
+
+        transform: rotate(45deg);
+    }
+
+    20% {
+
+        transform: rotate(-45deg);
+    }
+
+    30% {
+
+        transform: rotate(45deg);
+    }
+
+    40% {
+
+        transform: rotate(-45deg);
+    }
+
+    50% {
+
+        transform: rotate(45deg);
+    }
+
+    60% {
+
+        transform: rotate(-45deg);
+    }
+
+    70% {
+
+        transform: rotate(45deg);
+    }
+
+    80% {
+
+        transform: rotate(-45deg);
+    }
+
+    90% {
+
+        transform: rotate(45deg);
+    }
+
+    100% {
+
+        transform: rotate(-45deg);
+    }
+
+    to {
+
+        transform: rotate(-45deg);
+    }
+}
+
+main {
+
+    background-color: #F8F9FA;
+    margin: auto;
+    width: 50%;
+    border: 5px double black;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main h1 {
+
+    text-align: center;
+}
+
+p {
+
+    color: black;
+    font-family: Rio Grande Regular;
+    font-size: 30px;
+}
+
+h1 {
+
+    color: #007F5F;
+    font-family: KG Happy Solid;
+}
+
+h2 {
+
+    color: #2B9348;
+    font-family: KG Happy Solid;
+}
+
+h3 {
+
+    color: #55A630;
+    font-family: KG Happy Solid;
+}
+
+h4 {
+
+    color: #80B918;
+    font-family: KG Happy Solid;
+}
+
+h5 {
+
+    color: #AACC00;
+    font-family: KG Happy Solid;
+}
+
+h6 {
+
+    color: #BFD200;
+}
+
+#search-form {
+
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#search-form label {
+
+    font-family: Tahoma;
+    font-size: 80px;
+}
+
+#search-form input {
+
+    font-size: 70px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#search-form button {
+
+    background-color: #D2D6D5;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.song-container {
+
+    width: 85%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    box-shadow: 0 10px 10px 0 lightgray;
+    margin-top: 100px;
+    display: none;
+}
+
+.song-container audio {
+
+    width: 100%;
+}

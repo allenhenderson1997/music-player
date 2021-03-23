@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="js/scripts.js"></script>
+    <title>Search by Song Title or Album | MP3 Player</title>
+</head>
+<body>
+    <header>
+        <img src="img/music_notes.jpeg" />
+        <div id="logo-and-text">
+            <span>MP3 Player</span>
+            <ul>
+                <li onclick="window.location = 'index.html';">home</li>
+                <li onclick="window.location = 'about.html';">about</li>
+                <li onclick="window.location = 'search-music.html';">search</li>
+            </ul>
+        </div>
+    </header>
+
+    <form id="search-form" action="#">
+        <label for="song-title">Song Title</label>
+        <input type="text" id="song-title" name="song-title" placeholder="Song Title">
+        <input type="text" id="song-artist" name="song-artist" placeholder="Song Artist">
+        <button type="submit" onclick="searchMusic()">Search</button>
+    </form>
+
+    <div class="song-container" id="horses-keith-urban">
+        <h2>Horses</h2>
+        <h4>Keith Urban</h4>
+        <audio src="audio/keith-urban_horses.mp3" controls></audio>
+    </div>
+
+    <div class="song-container" id="love-the-way-it-hurts-keith-urban">
+        <h2>Love The Way It Hurts</h2>
+        <h4>Keith Urban</h4>
+        <audio src="audio/keith-urban_love-the-way-it-hurts.mp3" controls></audio>
+    </div>
+
+    <div class="song-container" id="never-coming-down-keith-urban">
+        <h2>Never Coming Down</h2>
+        <h4>Keith Urban</h4>
+        <audio src="audio/keith-urban_never-coming-down.mp3" controls></audio>
+    </div>
+
+    <div class="song-container" id="somewhere-in-my-car-keith-urban">
+        <h2>Somewhere In My Car</h2>
+        <h4>Keith Urban</h4>
+        <audio src="audio/keith-urban_somewhere-in-my-car.mp3" controls></audio>
+    </div>
+
+    <div class="song-container" id="this-is-us-jimmie-allen">
+        <h2>This Is Us</h2>
+        <h4>Jimmie Allen</h4>
+        <audio src="audio/jimmie-allen_this-is-us.mp3" controls></audio>
+    </div>
+
+    <div class="song-container" id="wasted-time-keith-urban">
+        <h2>Wasted Time</h2>
+        <h4>Keith Urban</h4>
+        <audio src="audio/wasted-time-keith-urban.mp3" controls></audio>
+    </div>
+</body>
+</html>
